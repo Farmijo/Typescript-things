@@ -8,7 +8,7 @@ const symbolism: 'symbolism' = 'symbolism'
 
 type NoYesStrings = 'NO' | 'YES';
 
-function toGerman2(value: NoYesStrings): string {
+function toGerman(value: NoYesStrings): string {
     switch (value) {
       case 'NO':
         return 'Nein';
@@ -16,4 +16,15 @@ function toGerman2(value: NoYesStrings): string {
         return 'Ja';
     }
   }
+  
+// Type exhaustiveness
+//This throws error
+function toGerman3(value: NoYesStrings): string {
+    switch (value) {
+      case 'Yes':
+        return 'Ja';
+      case
+    }
+  }
+
   
